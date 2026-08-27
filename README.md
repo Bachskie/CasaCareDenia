@@ -1,26 +1,28 @@
-Casa Care Dénia — prototype
+Casa Care Dénia — static site
 
-Files added:
-- index.html
-- styles.css
-- assets/logo.svg
-- assets/illustration-*.svg
+Clean file structure:
 
+```text
+CasaCareDenia/
+	index.html
+	css/
+		styles.css
+	js/
+		main.js
+	assets/
+		images/
+			logo-transparent.png
+			hero.jpg
+```
 
 Preview locally:
 
 ```bash
-# from the project folder
 python3 -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
 
-Design notes:
-- Updated palette: deep sea blue `--primary` and warm terracotta `--accent` for contrast.
-- Improved typography (Manrope for headings, Inter for body). Link to Google Fonts added in `index.html`.
-- Replaced icons with consistent two-tone vectors; cards have hover elevation and subtle motion.
+Open `http://localhost:8000`.
 
-Next steps: review visuals and tell me any tweaks (colour, spacing, or icon style) you want.
-Additional notes:
-- `main.js` implements a simple mobile menu toggle. No build step required.
-- If you want animations or a CMS export (WordPress), I can prepare that next.
+Notes:
+- No build step is required.
+- `js/main.js` includes navigation, contact form mailto handling and Dutch/English language toggle.
