@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const langToggle = document.getElementById('langToggle');
   const menu = document.getElementById('mobileMenu');
   const contactForm = document.getElementById('contactForm');
-  const langShort = document.querySelector('[data-lang-short]');
+  const langOptions = Array.from(document.querySelectorAll('[data-lang-option]'));
 
   const storedLanguage = window.localStorage ? window.localStorage.getItem('casacare-language') : null;
   const initialLanguage = storedLanguage === 'en' || storedLanguage === 'nl' ? storedLanguage : 'nl';
@@ -261,8 +261,13 @@ document.addEventListener('DOMContentLoaded', function(){
       langToggle.setAttribute('aria-label', language === 'nl' ? dictionary.lang.switchToEnglish : dictionary.lang.switchToDutch);
     }
 
-    if(langShort){
-      langShort.textContent = dictionary.lang.short;
+    if(langOptions.length){
+      langOptions.forEach(function(option){
+        const optionLanguage = option.getAttribute('data-lang-option');
+        const isActive = optionLanguage === language;
+        option.classList.toggle('is-active', isActive);
+        option.setAttribute('aria-pressed', String(isActive));
+      });
     }
 
     if(contactForm){
