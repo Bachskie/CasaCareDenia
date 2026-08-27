@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
       nav: {
         home: 'Home',
         services: 'Onze diensten',
+        palmService: 'Palmboom onderhoud',
         rentals: 'Verhuur',
         properties: 'Properties',
         pricing: 'Tarieven',
@@ -53,8 +54,10 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       },
       about: {
-        title: 'Één aanspreekpunt voor totale ontzorging',
-        body: 'Met korte lijnen en betrouwbare service zorgen wij dat uw woning in perfecte staat blijft. Wij coördineren onderhoud, inspecties, schoonmaak en gastcommunicatie zodat u geen omkijken heeft naar operationele taken. Dagelijkse checks, snelle responstijden bij problemen en transparante rapportages geven u rust en overzicht — lokaal, persoonlijk en betrouwbaar.'
+        title: 'Over ons',
+        body1: 'Casa Care Dénia is opgericht door Marion, met een achtergrond in vastgoed en een sterke focus op persoonlijke service. Vanuit Dénia is zij het vaste aanspreekpunt voor eigenaren die hun woning met vertrouwen willen achterlaten.',
+        body2: 'Onze aanpak combineert professionaliteit met betrokkenheid: heldere communicatie, snelle opvolging en praktische oplossingen. Met ervaring in woningbeheer en oog voor detail zorgen wij dat uw huis verzorgd, veilig en representatief blijft, ook wanneer u niet aanwezig bent.',
+        imageAlt: 'Marion van Casa Care Dénia'
       },
       rentals: {
         title: 'Verhuur',
@@ -63,7 +66,16 @@ document.addEventListener('DOMContentLoaded', function(){
       },
       pricing: {
         title: 'Tarieven',
-        body: 'Onze tarieven zijn transparant en afhankelijk van diensten en frequentie. We bieden vaste maandpakketten voor volledige ontzorging en losse services (schoonmaak, inspecties, onderhoud) per-oproep. Vraag een offerte met specifieke wensen en woningdetails voor een passende prijsopgave.',
+        intro: 'Geen twee woningen zijn hetzelfde. Daarom werken wij met heldere maatwerkoffertes op basis van uw woning, gebruik en gewenste ondersteuning.',
+        s1Title: 'Sleutelbeheer:',
+        s1Body: ' een betrouwbaar lokaal aanspreekpunt voor toegang, ontvangst en onverwachte situaties.',
+        s2Title: 'Sleutelbeheer & inspectie:',
+        s2Body: ' periodieke controles met terugkoppeling over veiligheid, netheid en staat van de woning.',
+        s3Title: 'Ondersteuning bij verhuur:',
+        s3Body: ' gastontvangst, uitleg en praktische ondersteuning voor een soepele aankomst en vertrek.',
+        s4Title: 'Schoonmaak & onderhoud:',
+        s4Body: ' betrouwbare coördinatie en kwaliteitscontrole zodat uw woning altijd verzorgd blijft.',
+        cta: 'Tijdens een korte kennismaking stellen we samen het juiste pakket op. U ontvangt vooraf een duidelijke prijs, zonder verrassingen.',
         link: 'Tarievenpagina'
       },
       properties: {
@@ -104,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function(){
       nav: {
         home: 'Home',
         services: 'Our services',
+        palmService: 'Palm tree maintenance',
         rentals: 'Rentals',
         properties: 'Properties',
         pricing: 'Pricing',
@@ -151,8 +164,10 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       },
       about: {
-        title: 'One point of contact for total peace of mind',
-        body: 'With short lines and reliable service we keep your home in perfect condition. We coordinate maintenance, inspections, cleaning and guest communication so you do not have to worry about operations. Daily checks, fast response times to issues and transparent reporting give you peace of mind and oversight — local, personal and reliable.'
+        title: 'About us',
+        body1: 'Casa Care Dénia was founded by Marion, who has a background in real estate and a strong focus on personal service. Based in Dénia, she is the fixed local contact for owners who want to leave their property with confidence.',
+        body2: 'Our approach combines professionalism with genuine care: clear communication, fast follow-up and practical solutions. With experience in property management and attention to detail, we keep your home safe, well presented and properly maintained, even when you are away.',
+        imageAlt: 'Marion from Casa Care Dénia'
       },
       rentals: {
         title: 'Rentals',
@@ -161,7 +176,16 @@ document.addEventListener('DOMContentLoaded', function(){
       },
       pricing: {
         title: 'Pricing',
-        body: 'Our rates are transparent and depend on services and frequency. We offer fixed monthly packages for full peace of mind and individual services (cleaning, inspections, maintenance) on request. Ask for a quote with your specific wishes and property details for a suitable price indication.',
+        intro: 'No two homes are the same. That is why we work with clear custom quotes based on your property, usage and preferred level of support.',
+        s1Title: 'Keyholding:',
+        s1Body: ' a reliable local point of contact for access, arrivals and unexpected situations.',
+        s2Title: 'Keyholding & inspections:',
+        s2Body: ' scheduled checks with updates on safety, cleanliness and overall property condition.',
+        s3Title: 'Rental support:',
+        s3Body: ' guest welcome, practical house guidance and on-call support for smooth stays.',
+        s4Title: 'Cleaning & maintenance:',
+        s4Body: ' dependable coordination and quality control so your property always stays in good shape.',
+        cta: 'After a short introduction we create the right package together. You receive a clear price in advance, with no surprises.',
         link: 'Pricing page'
       },
       properties: {
@@ -359,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // silently ignore
   }
 
-  if(window.Swiper){
+  if(window.Swiper && document.querySelector('.services-swiper')){
     new Swiper('.services-swiper', {
       loop: true,
       speed: 800,
