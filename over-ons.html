@@ -23,28 +23,34 @@
         <ul class="nav-list">
           <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
           <li class="nav-item-has-submenu">
-            <button class="submenu-trigger" type="button" data-i18n="nav.services" aria-label="Open services submenu">Onze diensten</button>
+            <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
             <ul class="submenu" aria-label="Services submenu">
               <li>
                 <a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a>
               </li>
               <li>
-                <a href="https://casacaredenia.com/palmboom-onderhoud/" target="_blank" rel="noopener" data-i18n="nav.palmService">Palmboom onderhoud</a>
+                <a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a>
               </li>
+              <li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li>
+              <li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li>
+              <li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li>
+              <li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li>
+              <li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
             </ul>
           </li>
           <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
           <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
           <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
-          <li><a href="index.html#blog" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
           <li><a href="index.html#contact" class="cta" data-i18n="nav.contactCta">Contact</a></li>
         </ul>
       </nav>
-      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">
-        <span class="lang-toggle-option" data-lang-option="nl">NL</span>
-        <span class="lang-toggle-sep" aria-hidden="true">/</span>
-        <span class="lang-toggle-option" data-lang-option="en">EN</span>
-      </button>
+      <select id="langToggle" class="lang-toggle" aria-label="Change language">
+        <option value="nl">Nederlands</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+      </select>
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Show menu">
         <span></span><span></span><span></span>
       </button>
@@ -53,20 +59,25 @@
       <ul>
         <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
         <li class="nav-item-has-submenu">
-          <button class="submenu-trigger" type="button" data-i18n="nav.services">Onze diensten</button>
+          <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
           <ul class="submenu">
             <li>
               <a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a>
             </li>
             <li>
-              <a href="https://casacaredenia.com/palmboom-onderhoud/" target="_blank" rel="noopener" data-i18n="nav.palmService">Palmboom onderhoud</a>
+              <a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a>
             </li>
+            <li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li>
+            <li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li>
+            <li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li>
+            <li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li>
+            <li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
           </ul>
         </li>
         <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
         <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
         <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
-        <li><a href="index.html#blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
         <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </div>
@@ -75,15 +86,15 @@
   <main>
     <section class="about" id="about">
       <div class="container">
-        <div class="about-profile">
-          <div class="about-profile-image-wrap">
-            <img src="assets/images/marion.jpg" alt="Marion van Casa Care Dénia" data-i18n-attr="alt:about.imageAlt" class="about-profile-image">
+        <div class="about-page-grid">
+          <div class="info-box loose about-page-copy">
+            <h1 data-i18n="about.title">Over ons</h1>
+            <p data-i18n="about.body1">Casa Care Dénia is opgericht door Marion, met een achtergrond in vastgoed en een sterke focus op persoonlijke service. Vanuit Dénia is zij het vaste aanspreekpunt voor eigenaren die hun woning met vertrouwen willen achterlaten.</p>
+            <p data-i18n="about.body2">Onze aanpak combineert professionaliteit met betrokkenheid: heldere communicatie, snelle opvolging en praktische oplossingen. Met ervaring in woningbeheer en oog voor detail zorgen wij dat uw huis verzorgd, veilig en representatief blijft, ook wanneer u niet aanwezig bent.</p>
           </div>
-        </div>
-        <div class="info-box loose">
-          <h1 data-i18n="about.title">Over ons</h1>
-          <p data-i18n="about.body1">Casa Care Dénia is opgericht door Marion, met een achtergrond in vastgoed en een sterke focus op persoonlijke service. Vanuit Dénia is zij het vaste aanspreekpunt voor eigenaren die hun woning met vertrouwen willen achterlaten.</p>
-          <p data-i18n="about.body2">Onze aanpak combineert professionaliteit met betrokkenheid: heldere communicatie, snelle opvolging en praktische oplossingen. Met ervaring in woningbeheer en oog voor detail zorgen wij dat uw huis verzorgd, veilig en representatief blijft, ook wanneer u niet aanwezig bent.</p>
+          <div class="about-page-image">
+            <img src="assets/images/marion.jpg" alt="Marion van Casa Care Dénia" data-i18n-attr="alt:about.imageAlt">
+          </div>
         </div>
       </div>
     </section>
@@ -95,7 +106,7 @@
       <div class="social-box" aria-label="Social links">
         <a href="https://www.facebook.com/casacaredenia/" aria-label="Facebook" target="_blank" rel="noopener"><i data-feather="facebook"></i></a>
         <a href="https://www.instagram.com/casacaredenia/" aria-label="Instagram" target="_blank" rel="noopener"><i data-feather="instagram"></i></a>
-        <a href="mailto:info@casacaredenia.com" aria-label="Email"><i data-feather="mail"></i></a>
+        <a href="mailto:support@casacaredenia.com" aria-label="Email"><i data-feather="mail"></i></a>
       </div>
     </div>
   </footer>

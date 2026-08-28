@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Casa Care Dénia — Palmboom onderhoud</title>
+  <meta name="description" content="Professioneel palmboom onderhoud in Dénia." />
+  <link rel="icon" href="assets/images/logo-transparent.png">
+  <link rel="apple-touch-icon" href="assets/images/logo-transparent.png">
+  <meta name="theme-color" content="#1B6FA8">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+</head>
+<body class="smooth">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Casa Care Dénia home" data-i18n-attr="aria-label:brand.homeLabel">
+        <img src="assets/images/logo-transparent.png" alt="Casa Care Dénia logo">
+      </a>
+      <nav class="site-nav" aria-label="Main menu" data-i18n-attr="aria-label:nav.menuLabel">
+        <ul class="nav-list">
+          <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item-has-submenu">
+            <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
+            <ul class="submenu">
+              <li><a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a></li>
+              <li><a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a></li>
+              <li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li><li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li><li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li><li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li><li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
+          <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
+          <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
+          <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="index.html#contact" class="cta" data-i18n="nav.contactCta">Contact</a></li>
+        </ul>
+      </nav>
+      <select id="langToggle" class="lang-toggle" aria-label="Change language">
+        <option value="nl">Nederlands</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+      </select>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Show menu"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+        <li class="nav-item-has-submenu">
+          <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
+          <ul class="submenu">
+            <li><a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a></li>
+            <li><a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a></li><li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li><li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li><li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li><li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li><li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
+        <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
+        <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-badge" data-i18n="nav.palmService">Palmboom onderhoud</span>
+          <h1 data-i18n="palm.title">Palmboom onderhoud in Dénia</h1>
+          <p class="hero-lead" data-i18n="palm.lead">Deskundige verzorging voor gezonde, veilige en representatieve palmbomen rondom uw woning.</p>
+          <div class="hero-actions"><a href="index.html#contact" class="btn primary" data-i18n="palm.button">Neem contact op</a></div>
+        </div>
+        <div class="info-box loose">
+          <p data-i18n="palm.intro">Palmbomen vragen om specialistische aandacht. Wij coördineren betrouwbaar onderhoud met lokale vakmensen, afgestemd op het seizoen en de conditie van uw tuin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offerings">
+      <div class="container">
+        <div class="section-head"><h2 data-i18n="palm.servicesTitle">Onze palmboomservice</h2></div>
+        <div class="cols">
+          <div class="col">
+            <article class="info-box"><h3 data-i18n="palm.oneTitle">Snoeien & verzorging</h3><p data-i18n="palm.oneBody">Vakkundig snoeien voor een verzorgde uitstraling en gezonde groei.</p></article>
+            <article class="info-box"><h3 data-i18n="palm.twoTitle">Inspectie & preventie</h3><p data-i18n="palm.twoBody">Regelmatige controles om plagen, schade en veiligheidsrisico’s tijdig te signaleren.</p></article>
+          </div>
+          <div class="col">
+            <article class="info-box"><h3 data-i18n="palm.threeTitle">Afvoer groenafval</h3><p data-i18n="palm.threeBody">Netjes verwijderen en afvoeren van snoeiafval na het onderhoud.</p></article>
+            <article class="info-box"><h3 data-i18n="palm.fourTitle">Seizoensgebonden planning</h3><p data-i18n="palm.fourBody">Onderhoud op het juiste moment, met een plan dat past bij uw terrein en palmbomen.</p></article>
+          </div>
+        </div>
+        <p class="lead" data-i18n="palm.cta">Vraag een vrijblijvende beoordeling van uw palmbomen aan.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.copy">Copyright © 2026 Casa Care Dénia</p>
+      <div class="social-box" aria-label="Social links">
+        <a href="https://www.facebook.com/casacaredenia/" aria-label="Facebook" target="_blank" rel="noopener"><i data-feather="facebook"></i></a>
+        <a href="https://www.instagram.com/casacaredenia/" aria-label="Instagram" target="_blank" rel="noopener"><i data-feather="instagram"></i></a>
+        <a href="mailto:support@casacaredenia.com" aria-label="Email"><i data-feather="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js?v=3" defer></script>
+</body>
+</html>

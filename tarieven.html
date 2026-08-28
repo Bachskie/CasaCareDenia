@@ -23,28 +23,34 @@
         <ul class="nav-list">
           <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
           <li class="nav-item-has-submenu">
-            <button class="submenu-trigger" type="button" data-i18n="nav.services" aria-label="Open services submenu">Onze diensten</button>
+            <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
             <ul class="submenu" aria-label="Services submenu">
               <li>
                 <a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a>
               </li>
               <li>
-                <a href="https://casacaredenia.com/palmboom-onderhoud/" target="_blank" rel="noopener" data-i18n="nav.palmService">Palmboom onderhoud</a>
+                <a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a>
               </li>
+              <li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li>
+              <li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li>
+              <li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li>
+              <li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li>
+              <li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
             </ul>
           </li>
           <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
           <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
           <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
-          <li><a href="index.html#blog" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
           <li><a href="index.html#contact" class="cta" data-i18n="nav.contactCta">Contact</a></li>
         </ul>
       </nav>
-      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">
-        <span class="lang-toggle-option" data-lang-option="nl">NL</span>
-        <span class="lang-toggle-sep" aria-hidden="true">/</span>
-        <span class="lang-toggle-option" data-lang-option="en">EN</span>
-      </button>
+      <select id="langToggle" class="lang-toggle" aria-label="Change language">
+        <option value="nl">Nederlands</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+      </select>
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Show menu">
         <span></span><span></span><span></span>
       </button>
@@ -53,20 +59,25 @@
       <ul>
         <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
         <li class="nav-item-has-submenu">
-          <button class="submenu-trigger" type="button" data-i18n="nav.services">Onze diensten</button>
+          <a class="submenu-trigger" href="diensten.html" data-i18n="nav.services">Diensten</a>
           <ul class="submenu">
             <li>
               <a href="https://www.properties.manderscostavillas.com/results/?id_tipo_operacion=2&modo=&od=&dt%5B%5D=&precio_min=&precio_max=&m2_min=&m2_max=&dormitorios_min=&dormitorios_max=&banos_min=&banos_max=&tipos_obra=&t_piscina=&fecha_alta=&vistas=&tipo_calefaccion=&primera_linea=&de_banco=&piscina=" target="_blank" rel="noopener" data-i18n="nav.rentals">Verhuur</a>
             </li>
             <li>
-              <a href="https://casacaredenia.com/palmboom-onderhoud/" target="_blank" rel="noopener" data-i18n="nav.palmService">Palmboom onderhoud</a>
+              <a href="palmboom-onderhoud.html" data-i18n="nav.palmService">Palmboom onderhoud</a>
             </li>
+            <li><a href="sleutelbeheer-inspectie.html" data-i18n="services.one.title">Sleutelbeheer & inspectie</a></li>
+            <li><a href="check-in-check-out.html" data-i18n="services.two.title">Check-in / Check-out</a></li>
+            <li><a href="schoonmaak.html" data-i18n="services.three.title">Schoonmaak</a></li>
+            <li><a href="onderhoud.html" data-i18n="services.four.title">Onderhoud</a></li>
+            <li><a href="social-media-marketing.html" data-i18n="services.five.title">Social media & marketing</a></li>
           </ul>
         </li>
         <li><a href="https://www.properties.manderscostavillas.com" target="_blank" rel="noopener" data-i18n="nav.properties">Properties</a></li>
         <li><a href="tarieven.html" data-i18n="nav.pricing">Tarieven</a></li>
         <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
-        <li><a href="index.html#blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
         <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </div>
@@ -78,24 +89,25 @@
         <div class="info-box loose">
           <h1 data-i18n="pricing.title">Tarieven</h1>
           <p data-i18n="pricing.intro">Geen twee woningen zijn hetzelfde. Daarom werken wij met heldere maatwerkoffertes op basis van uw woning, gebruik en gewenste ondersteuning.</p>
-          <ul class="pricing-list">
-            <li>
-              <strong data-i18n="pricing.s1Title">Sleutelbeheer:</strong>
-              <span data-i18n="pricing.s1Body"> een betrouwbaar lokaal aanspreekpunt voor toegang, ontvangst en onverwachte situaties.</span>
-            </li>
-            <li>
-              <strong data-i18n="pricing.s2Title">Sleutelbeheer & inspectie:</strong>
-              <span data-i18n="pricing.s2Body"> periodieke controles met terugkoppeling over veiligheid, netheid en staat van de woning.</span>
-            </li>
-            <li>
-              <strong data-i18n="pricing.s3Title">Ondersteuning bij verhuur:</strong>
-              <span data-i18n="pricing.s3Body"> gastontvangst, uitleg en praktische ondersteuning voor een soepele aankomst en vertrek.</span>
-            </li>
-            <li>
-              <strong data-i18n="pricing.s4Title">Schoonmaak & onderhoud:</strong>
-              <span data-i18n="pricing.s4Body"> betrouwbare coördinatie en kwaliteitscontrole zodat uw woning altijd verzorgd blijft.</span>
-            </li>
-          </ul>
+          <div class="pricing-accordions">
+            <details class="pricing-accordion">
+              <summary><span><strong>Sleutelbeheer</strong><small>Uw betrouwbare aanspreekpunt in Dénia</small></span><span class="price">€ 10,- p/m</span></summary>
+              <div class="pricing-accordion-content"><p>Met deze service heeft u altijd een betrouwbaar aanspreekpunt in Dénia, voor u of uw gasten bij vragen, problemen of verloren sleutels.</p><ul><li>Veilig en discreet beheer van uw sleutels</li><li>Betrouwbare sleuteloverdracht aan door u aangewezen technici of onderhoudspartners</li><li>Contactpersoon in de buurt voor onverwachte situaties</li></ul><a class="btn primary" href="index.html#contact">Bestel nu</a></div>
+            </details>
+            <details class="pricing-accordion">
+              <summary><span><strong>Sleutelbeheer & inspectie</strong><small>Controle en geruststelling tijdens uw afwezigheid</small></span><span class="price">Vanaf € 55,- p/m</span></summary>
+              <div class="pricing-accordion-content"><p>Voor eigenaren die zeker willen zijn dat hun woning veilig, goed onderhouden en verzorgd blijft.</p><ul><li>Controle van deuren, ramen, sloten, elektriciteit, water, apparatuur en vocht</li><li>Woning luchten, post controleren en tuincheck</li><li>Foto-rapportage naar de eigenaar</li><li>Frequentie van één of twee keer per maand, naar wens aanpasbaar</li><li>Extra inspecties na bijvoorbeeld een storm of onverwachte situatie</li></ul><a class="btn primary" href="index.html#contact">Maak een afspraak</a></div>
+            </details>
+            <details class="pricing-accordion">
+              <summary><span><strong>Ondersteuning voor eigenaren die verhuren</strong><small>Een warm welkom voor uw gasten</small></span><span class="price">Op aanvraag</span></summary>
+              <div class="pricing-accordion-content"><p>Voor verhuurders die hun gasten een hartelijk welkom en een betrouwbare lokale contactpersoon willen bieden.</p><ul><li>Veilig beheer van sleutels en toegang</li><li>Check-in met sleuteloverdracht, ontvangst en rondleiding</li><li>Check-out en woningcheck na verhuur</li><li>Organisatie van een VIP-ontvangstpakket</li><li>Ondersteuning bij vragen of verloren sleutels</li></ul><a class="btn primary" href="index.html#contact">Maak een afspraak</a></div>
+            </details>
+            <details class="pricing-accordion">
+              <summary><span><strong>Schoonmaak en onderhoud</strong><small>Uw woning verzorgd en verhuurklaar</small></span><span class="price">Op aanvraag</span></summary>
+              <div class="pricing-accordion-content"><p>Betrouwbare coördinatie zodat uw woning schoon, goed onderhouden en verzorgd blijft.</p><ul><li>Coördinatie van schoonmaak na verhuur, voorjaarsschoonmaak of glazenwasser</li><li>Organisatie van wasseretteservice</li><li>Offertes aanvragen en afspraken plannen</li><li>Contact met alarm- of beveiligingsdiensten</li><li>Begeleiding van onderhoud en kluswerk, met foto-rapportage waar nodig</li></ul><a class="btn primary" href="index.html#contact">Maak een afspraak</a></div>
+            </details>
+          </div>
+          <h2 class="pricing-closing-title">Laten we samen uw persoonlijke pakket samenstellen</h2>
           <p data-i18n="pricing.cta">Tijdens een korte kennismaking stellen we samen het juiste pakket op. U ontvangt vooraf een duidelijke prijs, zonder verrassingen.</p>
         </div>
       </div>
@@ -108,7 +120,7 @@
       <div class="social-box" aria-label="Social links">
         <a href="https://www.facebook.com/casacaredenia/" aria-label="Facebook" target="_blank" rel="noopener"><i data-feather="facebook"></i></a>
         <a href="https://www.instagram.com/casacaredenia/" aria-label="Instagram" target="_blank" rel="noopener"><i data-feather="instagram"></i></a>
-        <a href="mailto:info@casacaredenia.com" aria-label="Email"><i data-feather="mail"></i></a>
+        <a href="mailto:support@casacaredenia.com" aria-label="Email"><i data-feather="mail"></i></a>
       </div>
     </div>
   </footer>
