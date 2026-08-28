@@ -364,6 +364,39 @@ document.addEventListener('DOMContentLoaded', function(){
     es: { label: 'Chatear por WhatsApp', message: 'Hola, tengo una pregunta sobre Casa Care Dénia.' }
   };
 
+  function ensureMobileNavigation(){
+    const headerInner = document.querySelector('.header-inner');
+    const desktopNav = document.querySelector('.site-nav');
+    if(!headerInner || !desktopNav) return;
+
+    let mobileMenu = document.getElementById('mobileMenu');
+    if(!mobileMenu){
+      mobileMenu = document.createElement('div');
+      mobileMenu.id = 'mobileMenu';
+      mobileMenu.className = 'mobile-menu';
+      mobileMenu.setAttribute('hidden', '');
+      const navList = desktopNav.querySelector('.nav-list');
+      if(navList){
+        mobileMenu.appendChild(navList.cloneNode(true));
+      }
+      document.querySelector('.site-header').appendChild(mobileMenu);
+    }
+
+    if(!document.getElementById('navToggle')){
+      const navToggle = document.createElement('button');
+      navToggle.id = 'navToggle';
+      navToggle.className = 'nav-toggle';
+      navToggle.type = 'button';
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-controls', 'mobileMenu');
+      navToggle.setAttribute('aria-label', 'Show menu');
+      navToggle.innerHTML = '<span></span><span></span><span></span>';
+      headerInner.appendChild(navToggle);
+    }
+  }
+
+  ensureMobileNavigation();
+
   const navToggle = document.getElementById('navToggle');
   const langToggle = document.getElementById('langToggle');
   const menu = document.getElementById('mobileMenu');
